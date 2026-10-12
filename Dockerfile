@@ -40,9 +40,12 @@ HEALTHCHECK --interval=30s --timeout=10s --start-period=5s --retries=3 \
   CMD python -c "import urllib.request; urllib.request.urlopen('http://localhost:8000/')" || exit 1
 
 # ── Start Gunicorn ─────────────────────────────────────────────────────
+
+# Start Gunicorn
 CMD ["gunicorn", \
      "--bind", "0.0.0.0:8000", \
-     "--workers", "4", \
+     "--workers", "1", \
+     "--threads", "1", \
      "--worker-class", "sync", \
      "--timeout", "120", \
      "--access-logfile", "-", \
