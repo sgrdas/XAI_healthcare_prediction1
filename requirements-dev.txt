@@ -1,13 +1,12 @@
-# ================================================================
-# requirements-dev.txt – Lightweight dev requirements (no ML libs)
-# For getting the app running immediately without MySQL or ML deps
-# ================================================================
 
-# ── Web Framework ──────────────────────────────────────────────
+# LifeXAI - Lightweight development dependencies
+# Python 3.11+
+
+# Web framework
 Flask==3.0.3
 Werkzeug==3.0.3
 
-# ── Flask Extensions ───────────────────────────────────────────
+# Flask extensions
 Flask-SQLAlchemy==3.1.1
 Flask-Login==0.6.3
 Flask-WTF==1.2.1
@@ -15,8 +14,11 @@ Flask-Mail==0.10.0
 Flask-Bcrypt==1.0.1
 Flask-Migrate==4.0.7
 
-# ── Utilities ──────────────────────────────────────────────────
+# Utilities
 python-dotenv==1.0.1
 itsdangerous==2.2.0
 WTForms==3.1.2
 email-validator==2.2.0
+
+# Production web server
+gunicorn==23.0.0
