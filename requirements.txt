@@ -11,6 +11,53 @@ gunicorn==23.0.0
 Flask-SQLAlchemy==3.1.1
 Flask-Login==0.6.3
 Flask-WTF==1.2.1
+# Python 3.11 — LifeXAI production dependencies
+
+# Web framework
+Flask==3.0.3
+Werkzeug==3.0.3
+gunicorn==23.0.0
+
+# Flask extensions
+Flask-SQLAlchemy==3.1.1
+Flask-Login==0.6.3
+Flask-WTF==1.2.1
+Flask-Mail==0.10.0
+Flask-Bcrypt==1.0.1
+Flask-Migrate==4.0.7
+
+# MySQL database
+PyMySQL==1.1.1
+cryptography==42.0.8
+
+# Data processing and machine learning
+numpy==1.26.4
+pandas==2.2.2
+scikit-learn==1.5.1
+joblib==1.4.2
+imbalanced-learn==0.12.3
+xgboost==2.1.1
+lightgbm==4.4.0
+
+# Explainable AI
+shap==0.46.0
+lime==0.2.0.1
+
+# Visualization
+matplotlib==3.9.1
+plotly==5.23.0
+kaleido==0.2.1
+
+# Reports and images
+reportlab==4.2.2
+Pillow==10.4.0
+
+# Utilities and security
+python-dotenv==1.0.1
+itsdangerous==2.2.0
+WTForms==3.1.2
+email-validator==2.2.0
+
 Flask-Mail==0.10.0
 Flask-Bcrypt==1.0.1
 Flask-Migrate==4.0.7
